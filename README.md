@@ -1,2 +1,2 @@
-# minitasksPHASE3
-For doing minitasks
+# minitasks
+For doing tasks
