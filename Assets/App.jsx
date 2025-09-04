@@ -8,30 +8,26 @@ function App() {
 
   return (
     <>
-      import ProfileCard from "./ProfileCard";
-
-export default function App() {
-  return (
-    <div style={{
-      display: "flex",
-      justifyContent: "center",
-      alignItems: "center",
-      height: "100vh",
-      backgroundColor: "#f8f8f8"
-    }}>
-      <ProfileCard
-        name="Aarav Sharma"
-        role="Frontend Developer"
-        avatarUrl="https://i.pravatar.cc/150?img=12"
-        bio="Loves building clean UIs with React. Enjoys teaching, coffee, and CSS tricks."
-        skills={["React", "JavaScript", "Vite", "CSS"]}
-        onFollow={(state) => console.log("Follow State:", state)}
-      />
-    </div>
-  );
-}
-
-        
+      <div>
+        <a href="https://vite.dev" target="_blank">
+          <img src={viteLogo} className="logo" alt="Vite logo" />
+        </a>
+        <a href="https://react.dev" target="_blank">
+          <img src={reactLogo} className="logo react" alt="React logo" />
+        </a>
+      </div>
+      <h1>Vite + React</h1>
+      <div className="card">
+        <button onClick={() => setCount((count) => count + 1)}>
+          count is {count}
+        </button>
+        <p>
+          Edit <code>src/App.jsx</code> and save to test HMR
+        </p>
+      </div>
+      <p className="read-the-docs">
+        Click on the Vite and React logos to learn more
+      </p>
     </>
   )
 }
